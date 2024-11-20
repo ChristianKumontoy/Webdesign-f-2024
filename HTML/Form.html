@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Practice</h1>
+    <p>Create a new Account</p>
+    <form>
+        <table border="1"> 
+            <tr>
+                <td> <label for="firstName">firstName:</label> </td>
+                <td> <input type="text" name="firstName" id="firstName"> </td>
+                <td><label for="LastName">LastName</label> </td>
+                <td><input type="text" name="LastName" id="LastName"> </td>
+            </tr>
+            <tr>
+                <td><label for="mobileNumber">mobileNumber</label></td>
+                <td><input type="number" name="mobileNumber" id="mobileNumber"></td>
+                <td><label for="EmailAdress">EmailAdress</label> </td>
+                <td><input type="email" name="EmailAdress" id="EmailAdress"> </td>
+            </tr>
+            <tr>
+                <td><label for="Password">Password</label> </td>
+                <td><input type="password" name="Password" id="Password"></td>
+                <td><label for="Birthday">Birthday</label> </td>
+                <td><input type="date" name="Birthday" id="Birthday"></td>
+                
+            </tr>
+            <tr>  
+                <td><label for="Gender">gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="gender" value="Male"> Male
+                    <input type="radio" name="gender" id="gender" value="Female"> Female</td>
+
+                <td> <label for="prodi">program study </label></td>
+                <td>
+                    <select name="prodi" id="prodi">
+                        <option value="IF">Informatika</option>
+                        <option value="SI">Sistem informasi</option>
+                        <option value="DKV">DKV</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Hobby">Hobby</label>
+                    <input type="checkbox" name="Hobby" id="Hobby" value="programming">programming  
+                    <input type="checkbox" name="Hobby" id="Hobby" value="Database">Database
+                    <input type="checkbox" name="Hobby" id="Hobby" value="Networking">Networking
+                    <input type="checkbox" name="Hobby" id="Hobby" value="Sucurity">Sucurity
+                    <input type="checkbox" name="Hobby" id="Hobby" value="Multimedia">Multimedia
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
+
+
+</body>
+</html>

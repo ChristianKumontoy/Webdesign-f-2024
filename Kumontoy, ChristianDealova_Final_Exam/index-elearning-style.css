@@ -1,0 +1,177 @@
+body {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F9FC;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 70px 1fr 50px;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
+    height: 100vh;
+  }
+  
+  /* Header */
+  .header {
+    grid-area: header;
+    background-color: #82C3E6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .header__search input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+  }
+  
+  .header__avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__avatar .avatar-icon {
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .header__avatar .dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #CCC;
+  }
+  
+  .header__avatar:hover .dropdown ul {
+    display: block;
+  }
+  
+  /* Sidebar */
+  .sidenav {
+    grid-area: sidenav;
+    background-color: #4D6B8A;
+    color: white;
+    padding: 20px;
+  }
+
+  .sidenav .avatar-icon {
+    width: 135px;
+    padding: 0 30px;
+    border-radius: 50%;
+  }
+  
+  .sidenav__list-item {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .sidenav__list-item:hover {
+    background-color: #3A5471; /* Warna latar saat di-hover */
+    color: #E3F2FD; /* Warna teks saat di-hover */
+    border-radius: 8px; /* Tambahan jika ingin rounded */
+    padding: 8px; /* Tambahkan padding agar lebih menarik */
+  }
+
+  .sidenav__list-item i {
+    margin-right: 10px;
+  }
+  
+
+  /* Main */
+  .main {
+    grid-area: main;
+    padding: 20px;
+  }
+  
+  .welcome-section {
+    background-color: #EAF6FE;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .welcome-section img {
+    width: 150px;
+    margin-top: 10px;
+  }
+  
+  .main-overview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .overviewcard {
+    background-color: #A5D6F9;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .adoptable-gallery .gallery img {
+    width: 250px;
+    margin-right: 5px;
+    border-radius: 10px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #82C3E6;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    color: white;
+  }
+  
+  
+  .card.breed-comparison {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .card.breed-comparison h2, .card.breed-comparison h3 {
+    color: #4D6B8A;
+  }
+  
+  .card.breed-comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .card.breed-comparison table th,
+  .card.breed-comparison table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .card.breed-comparison table th {
+    background-color: #f7f9fc;
+    color: #4D6B8A;
+    font-weight: bold;
+  }
+  
+  .card.breed-comparison table tbody tr:nth-child(even) {
+    background-color: #f0f4f8;
+  }
+  
